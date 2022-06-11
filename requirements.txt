@@ -1,2 +1,2 @@
 keras==2.9.0
-windows-curses==2.3.0
+
