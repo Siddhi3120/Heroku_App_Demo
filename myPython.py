@@ -1,19 +1,7 @@
-from cProfile import label
-from logging import root
-import string
+from curses import window
 from tkinter import *
-from tkinter.ttk import *
-from time import strftime
-root = Tk()
-root.title("Clock")
+window=Tk()
+l1=Label(window,text="Title")
+l1.grid(row=0, column=0)
 
-def time():
-    string=strftime('%H:%M:%S %p')
-    label.config(text=string)
-    label.after(1000, time)
-
-label=Label(root,background = "black",foreground="cyan")
-label.pack(anchor='center')
-time()
-
-mainloop()
+window.mainloop()
